@@ -1,0 +1,245 @@
+@layer reset {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: unset;
+    }
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+    img,
+    picture,
+    svg,
+    canvas {
+      /* display: block; */
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  }
+  :root {
+    --grey-dark: #716e6e;
+    --grey-light: #aeaeae;
+    --green: #0bde46;
+    --blue: #0d79dd;
+    --blue-dark: #052054;
+    --font-family-body: "Lato", sans-serif;
+    --font-family-header: "Work Sans", sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 700;
+  }
+.hire{
+    margin:8%;
+}
+.detail h3{
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-medium);
+    font-size: 48px;
+    color: var(--blue);
+}
+.detail p,.detail li{
+    font-family: var(--font-family-body);
+    font-size: 24px;
+    font-weight: var(--font-weight-medium);
+    color: var(--grey-dark);
+}
+.detail p{
+    margin-bottom: 15px;
+}
+.detail{
+    margin-bottom: 7%;
+}
+.line{
+    width: auto;
+    height: 0.5px;
+    background-color: #000000;
+    margin-bottom: 7%;
+}
+.prj{
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 7%;
+}
+.client{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.client img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--grey-dark);
+    margin-right: 10px;
+}
+.client .name{
+    font-family: var(--font-family-header);
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+}
+h4{
+    font-family: var(--font-family-header);
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0.5%;
+}
+p{
+    font-family: var(--font-family-header);
+    font-size: 16px;
+    color: var(--grey-dark);
+}
+.prj-title, .prj-description, .scope, .skill{
+    margin-bottom: 3%;
+}
+.skills-in{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.skills-in li{
+    border: solid 0.5px black;
+    margin-right: 2%;
+    padding: 10px;
+    width: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:40px;
+    font-family: var(--font-family-header);
+    font-size: 16px;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 3%;
+}
+.btn a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--font-family-header);
+    font-size: 20px;
+    font-weight: var(--font-weight-semi-bold);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn .remove{
+    margin-right: 50px;
+    width: 216px;
+    background-color: red;
+}
+.btn .add{
+    width: 293px;
+    background-color: var(--green);
+}
+.no_hire{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .no_request{
+      width: 50%;
+      height: 570px;
+      font-family: var(--font-family-body);
+      font-size: 40px;
+      font-weight: var(--font-weight-medium);
+      color: var(--grey-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(to top, rgb(20 189 243 /0.3), rgb(20 189 243 /0.3)), url(images/no_hires.jpeg);
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      @media screen and (max-width:550px) {
+        width: 350px;
+        height: 250px;
+      }
+  }
+@media (max-width:530px){
+    .hire{
+        margin: 4%;
+    }
+    .detail h3{
+        font-size: 16px;
+    }
+    .detail p,.detail li{
+        font-size: 12px;
+    }
+    .detail p{
+        margin-bottom: 3%;  
+    }
+    .detail{
+        margin-bottom: 4%;
+    }
+    .line{
+        margin-bottom: 4%;
+    }
+    .client img{
+        width: 25px;
+        height: 25px;
+        margin-right: 6px;
+    }
+    .client .name{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 16px;
+        margin-bottom: 0.25%;
+    }
+    p{
+        font-size: 14px;
+    }
+    .prj-title, .prj-description, .scope, .skill{
+        margin-bottom: 2%;
+    }
+    .skills-in .skill3, .skills-in .skill4{
+        margin-top: 10px;
+    }
+    .skills-in{
+        justify-content: center;
+    }
+    .skills-in li{
+        padding: 5px;
+        width: 110px;
+    }
+    .btn{
+        justify-content: center;
+    }
+    .btn a{
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .btn .remove{
+        width: 107px;
+        margin-right: 25px;
+    }
+    .btn .add{
+        width: 200px;
+    }
+}

@@ -1,0 +1,128 @@
+:root {
+  --grey-dark: #716e6e;
+  --grey-light: #aeaeae;
+  --green: #0bde46;
+  --blue: #0d79dd;
+  --blue-dark: #052054;
+  --blue-light: #09abdd;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-header: "Work Sans", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+main {
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.payment_record_form {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .form_field {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-family: var(--font-family-header);
+      font-size: 1.3rem;
+      font-weight: var(--font-weight-semi-bold);
+    }
+    input, select {
+      width: 400px;
+      height: 45px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding-left: 1rem;
+      font-family: var(--font-family-body);
+      font-size: 1rem;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+    small{
+        color: red;
+        font-family: var(--font-family-header);
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+  }
+  .form_btns{
+      align-self: flex-end;
+    input{
+        border: none;
+        background-color: red;
+        font-family: var(--font-family-header);
+        font-size: 1.3rem;
+        padding: 0.3em 1.5em;
+        border-radius: 10px;
+        color: #fff;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    input[type="submit"]{
+        margin-right: 1.5rem;
+        background-color: var(--green);
+        padding: 0.3em 2em;
+    }
+  }
+}
+.record_table{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+    tr{
+        th{
+            border: 2px solid #000;
+            font-family: var(--font-family-header);
+            height: 2.5rem;
+        }
+        td{
+            border: 2px solid #000;
+            font-family: var(--font-family-body);
+            text-align: center;
+            padding: 0.5em 0;
+            button{
+                background-color: red;
+                font-family: var(--font-family-header);
+                font-size: 1.3rem;
+                color: #fff;
+                border: none;
+                border-radius: 0.5em;
+                padding: 0.3em 1em;
+                &:first-child{
+                    background-color: var(--blue);
+                    margin-right: 1.5rem;
+                    padding: 0.3em 1.5em;
+                }
+                &:hover, &:focus-visible{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

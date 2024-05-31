@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      />
+      <!-- font import -->
+
+      <!-- icon import -->
+      <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+      <!-- icon import -->
+
+      <!-- style files -->
+      <link rel="stylesheet" href="assets/base.css" />
+      <link rel="stylesheet" href="assets/projects.css" />
+      <!-- style files -->
+    <title>Projects</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+        <ul class="navlist">
+          <li class="navitem"><a href="talent.html">Talents</a></li>
+          <li class="navitem">
+            <a href="client.html">Clients</a>
+          </li>
+          <li class="navitem"><a href="project.html" aria-current="page">Projects</a></li>
+          <li class="navitem"><a href="application.html">Applications</a></li>
+          <li class="navitem">
+            <a href="payment_record.html">Payment Record</a>
+          </li>
+        </ul>
+        <button class="admin_profile">
+          <a href="admin_profile.html"
+            ><img src="assets/images/default_profile.svg" alt="admin profile"
+          /></a>
+        </button>
+      </nav>
+      <main>
+        <h1 id="tab_title" hidden>Projects</h1>
+        <div class="tabs_container">
+          <ul aria-describedby="tab_title" class="tab_list">
+            <li><a id="tab-1" class="tab_button" href="#new_projects">New Projects</a></li>
+            <li><a id="tab-2" class="tab_button" href="#completed_projects">Completed Projects</a></li>
+          </ul>
+
+          <div class="tabs_panels">
+            <div id="new_projects" aria-labelledby="tab-1" class="table_wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Project ID</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Client ID</th>
+                    <th scope="col">Client Name</th>
+                    <th scope="col">Hires</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                      <button class="done_btn">Mark as Done</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="completed_projects" class="table_wrapper" aria-labelledby="tab-2">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Sl.No</th>
+                    <th scope="col">Project ID</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Client ID</th>
+                    <th scope="col">Client Name</th>
+                    <th scope="col">Hires</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>12345678</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>12345678</td>
+                    <td>Tenzin Choda</td>
+                    <td>
+                      <ul class="hire_list">
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                        <li>TenzinC</li>
+                      </ul>
+                    </td>
+                    <td>80,000</td>
+                    <td>
+                      <button class="delete_btn">Delete Project</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <div>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div>
+            <p>Thimphu, Bhutan</p>
+            <a href="mailto: 12230054.gcit@rub.edu.bt"
+              >talentmatrix.bht@gmail.com</a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><img src="assets/images/facebook-icon.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/twitter-icon.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/discord-icon.svg" alt="discord"
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+       <!-- confirmation modal  for mark as done start -->
+    <dialog class="confirmation_modal_done confirmation_modal">
+      <div>
+        <p>Are You sure you want to mark the project as done?</p>
+        <div class="btns">
+          <button class="cancel_done">Cancel</button>
+          <button class="yes">Yes</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- confirmation modal for mark as done end -->
+
+       <!-- confirmation modal for delete project start -->
+    <dialog class="confirmation_modal_delete confirmation_modal">
+      <div>
+        <p>Are You sure you want to delete the project?</p>
+        <div class="btns">
+          <button class="cancel_delete">Cancel</button>
+          <button class="yes">Yes</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- confirmation modal for delete project end -->
+      <script src="assets/projects.js"></script>
+</body>
+</html>

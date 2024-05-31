@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Recovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/accountRecovery.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/images/logo.svg" alt="logo">
+    </div>
+    <main>
+        <form action="#" id="verification_form">
+            <div class="header">
+                <h1>Account Recovery</h1>
+                <p>To keep your account safe, Talent Matrix wants to confirm if it’s really you trying to login.</p>
+            </div>
+            <fieldset>
+                <input type="number" id="verification_code" name="verification_code" maxlength="1" required>
+                <input type="number" id="verification_code" name="verification_code" maxlength="1" disabled>
+                <input type="number" id="verification_code" name="verification_code" maxlength="1" disabled>
+                <input type="number" id="verification_code" name="verification_code" maxlength="1" disabled>
+            </fieldset>
+            <p>We have sent a four digit verification code to your email <span id="user_email">tenzin@2112.example.com</span>. Please enter the code in the above field.</p>
+            <button id="next_btn">Next <img src="assets/images/Arrow 2.svg" alt="" aria-hidden="true"></button>
+        </form>
+    </main>
+    <script src="assets/accountRecovery.js"></script>
+</body>
+</html>

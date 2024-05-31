@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/account_setting.css">
+    <link rel="stylesheet" href="assets/base.css">
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="assets/images/logo.svg" alt="Logo" class="logo"/>
+      <button class="topnavOpen" id="btnOpen" aria-expanded="false">
+        <i class="bx bx-menu"></i>
+      </button>
+      <div class="topnav">
+        <button class="topnavClose" id="btnClose">
+          <i class="bx bx-x"></i>
+        </button>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="talents.html">Talents</a></li>
+          <li class="nav_item projects_nav">
+            <a href="#">Projects <i class='bx bxs-chevron-down'></i></a>
+            <ul class="sub_nav_list">
+              <li class="sub_nav_item"><a href="ongoing_projects.html">Ongoing Projects</a></li>
+              <hr>
+              <li class="sub_nav_item"><a href="completed_projects.html">Completed Projects</a></li>
+            </ul>
+          </li>
+          <li class="nav_item"><a href="hires.html">My Hires</a></li>
+          <li class="nav_item mobile"><a href="ongoing_projects.html">Ongoing Projects</a></li>
+          <li class="nav_item mobile"><a href="completed_projects.html">Completed Projects</a></li>
+          <li class="nav_item mobile"><a href="account_setting.html" aria-current="page">Account Setting</a></li>
+          <li class="nav_item mobile"><a href="../login.html">Logout</a></li>
+        </ul>
+      </div>
+      <div class="profile_wrapper">
+         <button class="profile" aria-expanded="false"><img src="assets/images/tenzin-img.svg" alt="profile picture"></button> 
+         <div class="profile_menu">
+          <img src="assets/images/tenzin-img.svg" alt="profile picture">
+          <h3 id="client_name">Tenzin Choda</h3>
+          <h5>Client</h5>
+          <ul>
+              <li><a href="account_setting.html"><i class='bx bx-cog'></i> Account Settings</a></li>
+              <li><a href="../login.html"><i class='bx bx-log-out'></i> Logout</a></li>
+          </ul>
+         </div>
+      </div>
+    </nav>
+    <main>
+      <h1>Account Settings</h1>
+      <div class="personal_info">
+        <div class="profile_img">
+          <img src="assets/images/default_profile.svg" alt="profile" class="default_profile">
+          <button class="change_profile_btn"><label for="profile" class="add_profile">Change Profile</label></button> 
+          <input type="file" accept="image/jpeg, image/png, image/jpg" id="profile" name="profile" class="profile"></input>
+        </div>
+        <div class="details">
+          <p>User ID: <span id="idValue" class="detail">12345678</span></p>
+          <p>Full Name: <span id="nameValue" class="detail">Tenzin Choda</span></p>
+          <p>Email: <span id="emailValue" class="detail">tenzin@example.com</span></p>
+          <p>Phone Number: <span id="phone_numberValue" class="detail">17234567</span></p>
+          <p>Address: <span><span id="dzongkhagValue" class="detail">Paro</span>, <span id="regionValue" class="detail">Changzamto</span></span></p>
+        </div>
+         <button class="edit_btn" id="edit_personal_info"><i class='bx bx-edit-alt'></i></button>
+      </div>
+      <div class="organization_info">
+        <i class='bx bxs-business'></i>
+        <div class="details">
+          <p>Organization Name:</p>
+          <p id="organization_nameValue">Druk Holding and Investment</p>
+        </div>
+        <button class="edit_btn" id="edit_organization_info"><i class='bx bx-edit-alt'></i></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="category">
+          <h5>Search Talent: Category</h5>
+          <a href="#">Artificial Intelligence</a>
+          <a href="#">Art & Photography</a>
+          <a href="#">Fashion & Model</a>
+          <a href="#">Graphics & Design</a>
+          <a href="#">Music & Audio</a>
+          <a href="#">Programming & Tech</a>
+          <a href="#">Sales & Marketing</a>
+          <a href="#">Video & Animation</a>
+          <a href="#">Web, Mobile & Software dev</a>
+          <a href="#">Writing & Translation</a>
+        </div>
+        <div class="info">
+          <a href="#" id="open-contact-modal">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#" id="open-feedback-modal">Feedback</a>
+        </div>
+        <div class="contact-details">
+          <p>Thimphu, Bhutan</p>
+          <a href="mailto:12230054.gcit@rub.edu.bt"
+            >talentmatrix.bht@gmail.com</a
+          >
+          <div class="social-icons">
+            <a href="#"
+              ><img src="assets/images/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/linkedin-icon.svg" alt="Linked in"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/twitter-icon.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/discord-icon.svg" alt="Discord"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Persoanl info modal start -->
+    <dialog class="personal_info_modal">
+      <form action="#" id="personal_info_edit">
+        <div class="form_field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="Full Name">
+          <small></small>
+        </div>
+        <div class="form_field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+        </div>
+        <div class="form_field">
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" id="phone_number" name="Phone Number" maxlength="8">
+          <small></small>
+        </div>
+        <div class="address_field">
+          <fieldset>
+            <div class="form_field_address">
+              <legend>Address</legend>
+              <select name="address" id="dzongkhag">
+                <option value="Bumthang" id="dzongkhagOption">Bumthang</option>
+                <option value="chhukha" id="dzongkhagOption">Chhukha</option>
+                <option value="Dagana" id="dzongkhagOption">Dagana</option>
+                <option value="Gasa" id="dzongkhagOption">Gasa</option>
+                <option value="Haa" id="dzongkhagOption">Haa</option>
+                <option value="Lhuntse" id="dzongkhagOption">Lhuntse</option>
+                <option value="Mongar" id="dzongkhagOption">Mongar</option>
+                <option value="Paro" id="dzongkhagOption">Paro</option>
+                <option value="Pemagatshel" id="dzongkhagOption">Pemagatshel</option>
+                <option value="Punakha" id="dzongkhagOption">Punakha</option>
+                <option value="Samdrup Jongkhar" id="dzongkhagOption">Samdrup Jongkhar</option>
+                <option value="Samtse" id="dzongkhagOption">Samtse</option>
+                <option value="Sarpang" id="dzongkhagOption">Sarpang</option>
+                <option value="Thimpnu" id="dzongkhagOption">Thimphu</option>
+                <option value="Trashigang" id="dzongkhagOption">Trashigang</option>
+                <option value="Trashiyangtse" id="dzongkhagOption">Trashiyangtse</option>
+                <option value="Trongsa" id="dzongkhagOption">Trongsa</option>
+                <option value="Tsirang" id="dzongkhagOption">Tsirang</option>
+                <option value="Wangduephodrang" id="dzongkhagOption">Wangduephodrang</option>
+                <option value="Zhemgang" id="dzongkhagOption">Zhemgang</option>
+              </select>
+            </div>
+            <div class="form_field_address">
+              <input type="text" id="region" name="address" placeholder="Gewog or Thromde">
+              <small></small>
+            </div>
+          </fieldset>
+        </div>
+        <div class="btns">
+          <input type="reset" id="cancel_btn" value="Cancel">
+          <input type="submit" id="save_btn" value="Save">
+        </div>
+      </form>
+    </dialog>
+    <!-- Personal info modal end -->
+    <!-- Organization info modal start -->
+    <dialog class="organization_info_modal">
+      <form action="#">
+        <div class="form_field">
+          <label for="organization_name">Organization Name</label>
+          <input type="text" id="organization_name" name="Organization Name">
+        </div>
+        <div class="btns">
+          <input type="reset" id="cancel_btn" value="Cancel">
+          <input type="submit" id="save_btn" value="Save">
+        </div>
+      </form>
+    </dialog>
+    <!-- Organization info modal end -->
+
+      <!-- Contact us module start -->
+      <dialog class="contact-modal" id="contact-modal">
+        <button class="close-contact-modal">
+          <img src="assets/images/cross.svg" alt="Close the modal" />
+        </button>
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="679a14c6-fa2d-4fc2-9383-0da747517c66">
+          <h3>Contact Us</h3>
+          <p>
+            We would love to hear from you. Please fill out the form below and we
+            will get back to you as soon as possible.
+          </p>
+          <fieldset>
+            <legend>Role:</legend>
+            <div class="role-field">
+              <div class="client">
+                <input
+                  type="radio"
+                  id="client"
+                  name="role"
+                  value="client"
+                  spellcheck="false"
+                  required
+                />
+                <label for="client">Client</label>
+              </div>
+              <div class="talent">
+                <input type="radio" id="talent" name="role" value="talent" />
+                <label for="talent">Talent</label>
+              </div>
+              <div class="talent">
+                <input type="radio" id="other" name="role" value="other" />
+                <label for="talent">Other</label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="message-field">
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" class="submit-btn" />
+        </form>
+      </dialog>
+      <!-- Contact us modal end -->
+  
+      <!-- Feedback modal start-->
+      <dialog class="feedback-modal">
+        <button class="close-feedback-modal">
+          <img src="assets/images/cross.svg" alt="Close modal" />
+        </button>
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="679a14c6-fa2d-4fc2-9383-0da747517c66">
+          <h3>Feedback</h3>
+          <p>
+            Thank you for taking the time to provide us with your valuable
+            feedback. Your insights are crucial in helping us improve our services
+            to better meet your needs.
+          </p>
+          <textarea name="feedback" id="feedback" cols="30" rows="5" spellcheck="false" required></textarea>
+          <input type="submit" class="submit-btn"/>
+        </form>
+      </dialog>
+      <!-- Feedback modal start-->
+
+    <script src="assets/general.js"></script>
+    <script src="assets/account_setting.js"></script>
+  </body>
+</html>

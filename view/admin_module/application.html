@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font import -->
+
+    <!-- icon import -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- icon import -->
+
+    <!-- style files -->
+    <link rel="stylesheet" href="assets/base.css" />
+    <link rel="stylesheet" href="assets/application.css" />
+    <!-- style files -->
+    <title>Applications</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="logo" />
+      </div>
+      <ul class="navlist">
+        <li class="navitem"><a href="talent.html">Talents</a></li>
+        <li class="navitem">
+          <a href="client.html">Clients</a>
+        </li>
+        <li class="navitem">
+          <a href="project.html">Projects</a>
+        </li>
+        <li class="navitem"><a href="application.html" aria-current="page">Applications</a></li>
+        <li class="navitem">
+          <a href="payment_record.html">Payment Record</a>
+        </li>
+      </ul>
+      <button class="admin_profile">
+        <a href="admin_profile.html"
+          ><img src="assets/images/default_profile.svg" alt="admin profile"
+        /></a>
+      </button>
+    </nav>
+    <main>
+      <h1 id="tab_title" hidden>Projects</h1>
+      <div class="tabs_container">
+        <ul aria-describedby="tab_title" class="tab_list">
+          <li><a id="tab-1" class="tab_button" href="#pending">Pending</a></li>
+          <li>
+            <a id="tab-2" class="tab_button" href="#shortlisted">Shortlisted</a>
+          </li>
+        </ul>
+        <div class="tabs_panels">
+          <div class="wrapper" id="pending" aria-labelledby="tab-1">
+            <div class="wrapper_grid">
+              <div class="talent_card_wrapper">
+                <button class="shortlist" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+              <div class="talent_card_wrapper">
+                <button class="shortlist" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+              <div class="talent_card_wrapper">
+                <button class="shortlist" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+              <div class="talent_card_wrapper">
+                <button class="shortlist" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper" id="shortlisted" aria-labelledby="tab-2">
+            <div class="wrapper_grid">
+              <div class="talent_card_wrapper">
+                <button class="approve" title="approve">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+              <div class="talent_card_wrapper">
+                <button class="approve" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+              <div class="talent_card_wrapper">
+                <button class="approve" title="shortlist">
+                  <svg
+                    width="28"
+                    height="35"
+                    viewBox="0 0 28 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8164 33.4712L23.8163 33.471L14.4363 26.771L14.0003 26.4597L13.5644 26.771L4.1844 33.471L4.18411 33.4713C3.02577 34.2995 1.41699 33.4715 1.41699 32.048V5.33301C1.41699 4.20584 1.86476 3.12483 2.66179 2.3278C3.45882 1.53077 4.53982 1.08301 5.66699 1.08301H22.3337C23.4608 1.08301 24.5418 1.53077 25.3389 2.3278C26.1359 3.12483 26.5837 4.20584 26.5837 5.33301V32.0463C26.5837 33.4699 24.9731 34.2978 23.8164 33.4712Z"
+                      fill="white"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <div class="profile">
+                  <img
+                    src="assets/images/default_profile.svg"
+                    alt="talent profile"
+                  />
+                </div>
+                <div class="details">
+                  <p>Full Name: <span id="name">Tenzin Choda</span></p>
+                  <p>
+                    Email Address: <span id="email">tenzin@example.com</span>
+                  </p>
+                  <p>CID: <span id="cid">12345678909</span></p>
+                  <p>Phone Number: <span id="phone_number">12345678</span></p>
+                  <p>
+                    Portfolio:
+                    <span id="phone_number">
+                      https://article-preview-component-five-flame.vercel.app/</span
+                    >
+                  </p>
+                </div>
+                <a href="#">View full profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <p>Thimphu, Bhutan</p>
+          <a href="mailto: 12230054.gcit@rub.edu.bt"
+            >talentmatrix.bht@gmail.com</a
+          >
+        </div>
+        <div>
+          <a href="#"
+            ><img src="assets/images/facebook-icon.svg" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="assets/images/twitter-icon.svg" alt="twitter"
+          /></a>
+          <a href="#"
+            ><img src="assets/images/discord-icon.svg" alt="discord"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- confirmation modal for shortlisting start -->
+    <dialog class="confirmation_modal_shortlist confirmation_modal">
+      <div>
+        <p>The talent profile will be transfered to the shortlisted section.</p>
+        <div class="btns">
+          <button class="cancel_btn">Cancel</button>
+          <button class="confirm_btn">confirm</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- confirmation modal for shortlisting end -->
+    <!-- confirmation modal for shortlisting start -->
+    <dialog class="confirmation_modal_approve confirmation_modal">
+      <div>
+        <p>The talent profile will be displayed for hire.</p>
+        <div class="btns">
+          <button class="cancel_btn">Cancel</button>
+          <button class="confirm_btn">confirm</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- confirmation modal for shortlisting end -->
+    <script src="assets/application.js"></script>
+  </body>
+</html>

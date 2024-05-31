@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" href="assets/project_creation.css">
+</head>
+<body>
+    <div class="logo">
+       <a href="ongoing_projects.html"><img src="assets/images/logo.svg" alt="Talent matrix logo"></a> 
+    </div>
+    <main>
+        <div class="header">
+            <h1>Project Creation</h1>
+            <h2>Time to get your work done with the best talent network.</h2>
+            <h3>Fill the following fields with clear and concise details of your project to allow the talents get a clear picture of your project. </h3>
+        </div>
+        <form action="#" id="project_creation_form">
+            <div class="form-field">
+                <label for="project_title">Project Title:</label>
+                <small>Write a short sentence to describe your project.</small>
+                <input type="text" id="project_title" name="Project Title" required>
+            </div>
+            <div class="form-field">
+                <label for="project_description">Project Description:</label>
+                <small>Give your project a clear and concise description.</small>
+                <textarea name="project description" id="project_description" cols="30" rows="7" required></textarea>
+            </div>
+            <fieldset class="project_scope">
+                <legend>Project Scope:</legend>
+                <div class="radio-field">
+                    <input type="radio" name="Project Scope" id="small" value="small" required>
+                    <label for="small">Small (1-2 months)</label>
+                </div>
+                <div class="radio-field">
+                    <input type="radio" name="Project Scope" id="medium" value="medium">
+                    <label for="medium">Medium (3-5 months)</label>
+                </div>
+                <div class="radio-field">
+                    <input type="radio" name="Project Scope" id="large" value="large">
+                    <label for="large">Large (6+ months)</label>
+                </div>
+            </fieldset>
+            <div class=" form-field skill-field">
+                <label for="skills">Skills:</label>
+                <select name="skills" id="skills" multiple>
+                    <option value="machine learning">Machine Learning</option>
+                    <option value="natural language Processing">Natural Language Processing</option>
+                    <option value="neural networks">Neural Networks</option>
+                    <option value="deep learning">Deep Learning</option>
+                    <option value="reinforcement learning">Reinforcement Learning</option>
+                    <option value="autonomous systems">Autonomous Systems</option>
+                    <option value="drawing">Drawing</option>
+                    <option value="painting">Painting</option>
+                    <option value="digital art">Digital Art</option>
+                    <option value="sculpture">Sculpture</option>
+                    <option value="photography">Photography</option>
+                    <option value="photo editing">Photo Editing</option>
+                    <option value="illustration">Illustration</option>
+                    <option value="fashion design">Fashion Design</option>
+                    <option value="textile design">Textile Design</option>
+                    <option value="pattern making">Pattern Making</option>
+                    <option value="model casting">Model Casting</option>
+                    <option value="fashion marketing">Fashion Marketing</option>
+                    <option value="brand management">Brand Management</option>
+                    <option value="fashion photography">Fashion Photography</option>
+                    <option value="adobe photoshop">Adobe Photoshop</option>
+                    <option value="adobe illustrator">Adobe Illustrator</option>
+                    <option value="adobe indesign">Adobe Indesign</option>
+                    <option value="typography">Typography</option>
+                    <option value="logo design">Logo Design</option>
+                    <option value="branding">Branding</option>
+                    <option value="layout design">Layout Design</option>
+                    <option value="motion graphics">Motion Graphics</option>
+                    <option value="ui/ux design">UI/UX Design</option>
+                    <option value="user centered design">User Centered Design</option>
+                    <option value="music production">Music Production</option>
+                    <option value="audio engineering">Audio Engineering</option>
+                    <option value="song writing">Song Writing</option>
+                    <option value="sound editing">Sound Editing</option>
+                    <option value="voiceover">Voiceover</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="operating systems">Operating Systems</option>
+                    <option value="angular">Angular</option>
+                    <option value="react">React</option>
+                    <option value="golang">Golang</option>
+                    <option value="nextjs">Next js</option>
+                    <option value="data structure and algorithm">Data Structure & Algorithm</option>
+                    <option value="cloud computing">cloud computing</option>
+                    <option value="server management">Server Management</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="graphql">GraphQl</option>
+                    <option value="network management">Network Management</option>
+                    <option value="ethical hacking">Ethical Hacking</option>
+                    <option value="cyber security">Cyber Security</option>
+                    <option value="digital marketing">Digital Marketing</option>
+                    <option value="social media marketing">Social Media Marketing</option>
+                    <option value="content marketing">Content Marketing</option>
+                    <option value="search engine optimization">Search Engine Optimization</option>
+                    <option value="market research">Market Research</option>
+                    <option value="brand management">Brand Management</option>
+                    <option value="sales strategy">Sales Strategy</option>
+                    <option value="customer relationship management">Customer Relationship Management</option>
+                    <option value="advertising">Advertising</option>
+                    <option value="3d modeling">3D Modeling</option>
+                    <option value="video editing">Video Editing</option>
+                    <option value="visual effects">Visual Effects</option>
+                    <option value="character design">Character Design</option>
+                    <option value="cinematography">Cinematography</option>
+                    <option value="animation">Animation</option>
+                    <option value="frontend development">Frontend Development</option>
+                    <option value="backend development">Backend Development</option>
+                    <option value="full-stack development">Full-Stack Development</option>
+                    <option value="mobile app development">Mobile App Development (iOS/Android)</option>
+                    <option value="responsive design">Responsive Design</option>
+                    <option value="devops">DevOps</option>
+                    <option value="copywriting">Copywriting</option>
+                    <option value="creative writing">Creative Writing</option>
+                    <option value="technical writing">Technical Writing</option>
+                    <option value="editing and proofreading">Editing & Proofreading</option>
+                    <option value="translation">Translation (various languages)</option>
+                    <option value="content creation">Content Creation</option>
+                    <option value="scriptwriting">Scriptwriting</option>
+                    <option value="transcreation">Transcreation</option>
+                    <option value="carpentry">Carpentry</option>
+                    <option value="music and audio">Music & Audio</option>
+                    <option value="artificial intelligence">Artificial Intelligence</option>
+                    <option value="blockchain technology">Blockchain Technology</option>
+                    <option value="graphics design">Graphics Design</option>
+                    <option value="web design">Web Design</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="payment">Payment:</label>
+                <small>Enter the starting amount you are willing to pay for your project.</small>
+                <input type="number" id="payment" name="payment" required>
+            </div>
+            <input type="submit" value="Finish" class="submit_btn">
+        </form>
+    </main>
+    <div class="success">
+        <i class='bx bx-check-circle'></i>
+        <h1>Project succseefully created time to hire some talents!!!</h1> 
+        <div class="links">
+            <a href="ongoing_projects.html">Go back to project page.</a>
+            <a href="talents.html">Hire talents right away.</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+    <script src="assets/project_creation.js"></script>
+</body>
+</html>

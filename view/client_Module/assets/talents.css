@@ -1,0 +1,301 @@
+@layer reset {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: unset;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    /* display: block; */
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root {
+  --grey-dark: #716e6e;
+  --grey-light: #aeaeae;
+  --green: #0bde46;
+  --blue: #0d79dd;
+  --blue-dark: #052054;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-header: "Work Sans", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--blue); /* Color of the thumb */
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-dark); /* Color of the thumb on hover */
+    cursor: grabbing;
+  }
+}
+
+main {
+  padding-inline: 2.5rem;
+  margin-bottom: 1.5rem;
+  @media screen and (max-width: 830px) {
+    padding-inline: 1rem;
+  }
+}
+.search {
+  position: relative;
+}
+.search-input {
+  font-size: 0.7rem;
+  font-family: var(--font-family-header);
+  border: 2px solid #000;
+  width: 500px;
+  border-radius: 50px;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  height: 45px;
+  font-size: 1.3rem;
+  @media screen and (max-width: 830px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 300px;
+  }
+}
+button[type="submit"] {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.7rem;
+  left: 1rem;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.search-input::placeholder {
+  color: var(--grey-dark);
+  font-size: 1.3rem;
+}
+.search_box {
+  position: absolute;
+  top: 45px;
+  z-index: 10;
+  width: 500px;
+  max-height: 300px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  display: none;
+  background: #fff;
+  box-shadow: 5px 5px 5px var(--grey-light);
+  @media screen and (max-width: 830px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 300px;
+  }
+  &::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--blue); /* Color of the thumb */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-dark); /* Color of the thumb on hover */
+  }
+  ul {
+    li {
+      list-style: none;
+      font-family: var(--font-family-body);
+      padding: 0.7rem 1rem;
+      &:hover {
+        cursor: pointer;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(
+          135deg,
+          rgba(9, 171, 221, 0.3),
+          rgba(9, 171, 221, 0.3)
+        );
+      }
+    }
+  }
+}
+#search_form {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  position: relative;
+  @media screen and (max-width: 550px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .category_filter {
+    position: relative;
+    #category {
+      border-radius: 100px;
+      width: 20rem;
+      padding-inline: 1rem;
+      appearance: none;
+      font-family: var(--font-family-body);
+      cursor: pointer;
+      height: 3rem;
+      font-size: 1rem;
+      @media screen and (max-width: 830px) {
+        width: 250px;
+      }
+      @media screen and (max-width: 550px) {
+        width: 400px;
+      }
+      @media screen and (max-width: 450px) {
+        width: 350px;
+      }
+      @media screen and (max-width: 375px) {
+        width: 300px;
+      }
+    }
+    select {
+      width: 20px;
+    }
+    .bx {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1rem;
+      pointer-events: none;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.talent_cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  .card_container {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1rem;
+    .talent_image {
+      img {
+        border-radius: 10px;
+      }
+    }
+    .username {
+      font-family: var(--font-family-header);
+      font-weight: var(--font-weight-semi-bold);
+      text-align: center;
+      color: var(--blue);
+    }
+    .address {
+      display: flex;
+      align-items: flex-end;
+      font-size: 1rem;
+      font-weight: var(--font-weight-semi-bold);
+      font-family: var(--font-family-body);
+      justify-content: center;
+      margin-top: 0.3rem;
+      .address-icon {
+        font-size: 1.3rem;
+      }
+    }
+    .skills_wrapper {
+      margin-top: 0.9rem;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        li {
+          list-style: none;
+          white-space: nowrap;
+          font-family: var(--font-family-body);
+          border: 1px solid var(--blue);
+          border-radius: 20px;
+          padding: 0.3rem 0.5rem;
+          color: var(--blue);
+          font-weight: var(--font-weight-semi-bold);
+        }
+      }
+    }
+    .card_btn {
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      background: var(--green);
+      font-family: var(--font-family-body);
+      font-size: 1.3rem;
+      font-weight: var(--font-weight-semi-bold);
+      margin-inline: auto;
+      margin-top: 1rem;
+      display: block;
+      width: 150px;
+      padding: 0.5rem 0;
+      border-radius: 20px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

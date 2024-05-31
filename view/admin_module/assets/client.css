@@ -1,0 +1,99 @@
+:root {
+  --grey-dark: #716e6e;
+  --grey-light: #aeaeae;
+  --green: #0bde46;
+  --blue: #0d79dd;
+  --blue-dark: #052054;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-header: "Work Sans", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+
+main{
+    margin-bottom: 2rem;
+    padding-inline: 3rem;
+    .searchbar{
+        form{
+            position: relative;
+            input{
+                border: 2px solid #000;
+                width: 350px;
+                height: 45px;
+                border-radius: 100px;
+                padding-left: 3.5rem;
+                padding-right: 1rem;
+                font-family: var(--font-family-body);
+                font-size: 1.3rem;
+            }
+            button{
+                position: absolute;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                cursor: pointer;
+                top: 0.5rem;
+                left: 1rem;
+            }
+        }
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin-top: 2rem;
+        gap: 1.5rem;
+        .card_wrapper{
+            border-radius: 10px;
+            border: 2px solid var(--grey-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+            .card_body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                h3{
+                    font-family: var(--font-family-header);
+                    font-weight: var(--font-weight-semi-bold);
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5rem;
+                }
+                p{
+                    font-family: var(--font-family-body);
+                }
+            }
+            button{
+                width: 180px;
+                height: 35px;
+                border: none;
+                border-radius: 100px;
+                background-color: var(--green);
+                color: #fff;
+                font-family: var(--font-family-header);
+                font-size: 1.3rem;
+                font-weight: var(--font-weight-medium);
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+

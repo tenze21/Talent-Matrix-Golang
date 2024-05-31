@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      />
+      <!-- font import -->
+
+      <!-- icon import -->
+      <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+      <!-- icon import -->
+
+      <!-- style files -->
+      <link rel="stylesheet" href="assets/base.css" />
+      <link rel="stylesheet" href="assets/client_profile.css" />
+      <!-- style files -->
+      
+    <title>Client Profile</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="logo" />
+      </div>
+      <ul class="navlist">
+        <li class="navitem"><a href="talent.html">Talents</a></li>
+        <li class="navitem">
+          <a href="client.html" aria-current="page">Clients</a>
+        </li>
+        <li class="navitem"><a href="project.html">Projects</a></li>
+        <li class="navitem"><a href="application.html">Applications</a></li>
+        <li class="navitem">
+          <a href="payment_record.html">Payment Record</a>
+        </li>
+      </ul>
+      <button class="admin_profile">
+        <a href="admin_profile.html"
+          ><img src="assets/images/default_profile.svg" alt="admin profile"
+        /></a>
+      </button>
+    </nav>
+    <main>
+      <div class="client_profile_wrapper">
+        <div class="client_profile">
+          <img src="assets/images/default_profile.svg" alt="profile" />
+        </div>
+        <div class="details">
+          <div class="id">
+            <p>User ID:</p>
+            <p id="userid">12345678</p>
+          </div>
+          <div class="name">
+            <p>Full Name:</p>
+            <p id="fullname">Tenzin Choda</p>
+          </div>
+          <div class="phonenumber">
+            <p>Phone Number:</p>
+            <p id="phonenumber">17364523</p>
+          </div>
+          <div class="email">
+            <p>Email:</p>
+            <p id="email">tenzin@example.com</p>
+          </div>
+          <div class="address">
+            <p>Address:</p>
+            <p id="address">
+              <span id="dzongkhag">Thimphu</span>, <span id="region">Taba</span>
+            </p>
+          </div>
+          <div class="organization">
+            <p>Organization:</p>
+            <p id="organization">Druk Holding and investment</p>
+          </div>
+        </div>
+        <button id="delete_user_btn">Delete User</button>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <p>Thimphu, Bhutan</p>
+          <a href="mailto: 12230054.gcit@rub.edu.bt"
+            >talentmatrix.bht@gmail.com</a
+          >
+        </div>
+        <div>
+          <a href="#"
+            ><img src="assets/images/facebook-icon.svg" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="assets/images/twitter-icon.svg" alt="twitter"
+          /></a>
+          <a href="#"
+            ><img src="assets/images/discord-icon.svg" alt="discord"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- confirmation modal start -->
+    <dialog class="confirmation_modal">
+      <div>
+        <p>Are You sure you want to delete the user?</p>
+        <div class="btns">
+          <button class="cancel">Cancel</button>
+          <button class="yes">Yes</button>
+        </div>
+      </div>
+    </dialog>
+    <!-- confirmation modal end -->
+    <script src="assets/client_profile.js"></script>
+  </body>
+</html>

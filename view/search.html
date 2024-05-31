@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <!-- font import -->
+
+    <!-- icon import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <!-- icon import -->
+
+    <!-- style file -->
+    <link rel="stylesheet" href="assets/search.css">
+    <!-- style file -->
+    
+    <title>Search Section</title>
+</head>
+<body>
+  <nav class="navbar">
+    <img src="assets/images/logo.svg" alt="Logo" />
+    <button class="topnavOpen" id="btnOpen" aria-expanded="false">
+      <i class='bx bx-menu'></i>
+    </button> 
+    <div class="topnav">
+      <button class="topnavClose" id="btnClose"><i class='bx bx-x'></i></button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="client.html">Clients</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+      </ul>
+      <div class="nav-btns">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="selectrole.html" class="register-btn">Register</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <form id="search_form">
+      <div class="search">
+        <button type="submit"><i class='bx bx-search' aria-hidden="true"></i></button> 
+        <input class="search-input" id="search" type="search" placeholder="Search" role="search" autocomplete="off" spellcheck="false" autocapitalize="off">
+      </div>
+      <div class="search_box">
+      </div>
+      <div class="category_filter">
+        <select name="category" id="category">
+          <option value="">Categories</option>
+          <option value="Artificial Intelligence">Artificial Intelligence</option>
+          <option value="Art and Photography">Art & Photography</option>
+          <option value="Fashion & Model">Fashion & Model</option>
+          <option value="Graphics & Design">Graphics & Design</option>
+          <option value="Music & Audio">Music & Audio</option>
+          <option value="Programming & Tech">Programming & Tech</option>
+          <option value="Sales & Marketing">Sales & Marketing</option>
+          <option value="Video & Animation">Video & Animation</option>
+          <option value="Web, Mobile & Software Dev">Web, Mobile & Software Dev</option>
+          <option value="writing & Translation">writing & Translation</option>
+        </select>
+        <i class='bx bxs-down-arrow'></i>
+      </div>
+    </form>
+    <div class="talent_cards_wrapper">
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+      <div class="card_container">
+        <div class="talent_image"><img src="assets/images/_Co-working Life__ by Stocksy Contributor _BONNINSTUDIO _ 1.svg" alt=""></div>
+        <h2 class="username">Sangay Thinley</h2>
+        <p class="address">
+          <span class="address-icon material-symbols-outlined">location_on</span>
+          <span id="dzongkhag">Thimphu</span>, <span>Bhutan</span> 
+        </p>
+        <div class="skills_wrapper">
+          <ul>
+            <li>Fashion Design</li>
+            <li>Angular js</li>
+            <li>Cyber Security</li>
+          </ul>
+        </div>
+        <a href="talent_profile.html" target="_blank" class="card_btn">see more</a>
+      </div>
+    </div>
+  </main>
+       <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="category">
+          <h5>Search Talent: Category</h5>
+          <a href="#">Artificial Intelligence</a>
+          <a href="#">Art & Photography</a>
+          <a href="#">Fashion & Model</a>
+          <a href="#">Graphics & Design</a>
+          <a href="#">Music & Audio</a>
+          <a href="#">Programming & Tech</a>
+          <a href="#">Sales & Marketing</a>
+          <a href="#">Video & Animation</a>
+          <a href="#">Web, Mobile & Software dev</a>
+          <a href="#">Writing & Translation</a>
+        </div>
+        <div class="info">
+          <a href="#">About Us</a>
+          <a href="#" id="open-contact-modal">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#" id="open-feedback-modal">Feedback</a>
+        </div>
+        <div class="contact-details">
+          <p>Thimphu, Bhutan</p>
+          <a href="mailto:12230054.gcit@rub.edu.bt"
+            >talentmatrix.bht@gmail.com</a
+          >
+          <div class="social-icons">
+            <a href="#"
+              ><img src="assets/images/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/linkedin-icon.svg" alt="Linked in"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/twitter-icon.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/discord-icon.svg" alt="Discord"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+      <!-- Contact us module start -->
+    <dialog class="contact-modal" id="contact-modal">
+      <button class="close-contact-modal">
+        <img src="assets/images/cross.svg" alt="Close the modal" />
+      </button>
+      <form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="8de617bc-b858-4fa4-8c6a-f503ffab4244">
+        <h3>Contact Us</h3>
+        <p>
+          We would love to hear from you. Please fill out the form below and we
+          will get back to you as soon as possible.
+        </p>
+        <fieldset>
+          <legend>Role:</legend>
+          <div class="role-field">
+            <div class="client">
+              <input
+                type="radio"
+                id="client"
+                name="role"
+                value="client"
+                spellcheck="false"
+                required
+              />
+              <label for="client">Client</label>
+            </div>
+            <div class="talent">
+              <input type="radio" id="talent" name="role" value="talent" />
+              <label for="talent">Talent</label>
+            </div>
+            <div class="talent">
+              <input type="radio" id="other" name="role" value="other" />
+              <label for="talent">Other</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="message-field">
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" class="submit-btn" />
+      </form>
+    </dialog>
+    <!-- Contact us modal end -->
+
+
+    <!-- Feedback modal start-->
+    <dialog class="feedback-modal">
+      <button class="close-feedback-modal">
+        <img src="assets/images/cross.svg" alt="Close modal" />
+      </button>
+      <form action="#" method="modal">
+        <h3>Feedback</h3>
+        <p>
+          Thank you for taking the time to provide us with your valuable
+          feedback. Your insights are crucial in helping us improve our services
+          to better meet your needs.
+        </p>
+        <textarea name="feedback" id="feedback" cols="100" rows="8"></textarea>
+        <input type="submit" class="submit-btn" required />
+      </form>
+    </dialog>
+    </div>
+  </div>
+  <script src="assets/search.js"></script>
+</body>
+</html>

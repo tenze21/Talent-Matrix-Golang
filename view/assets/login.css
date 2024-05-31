@@ -1,0 +1,225 @@
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+:root {
+  --grey-dark: #716e6e;
+  --grey-light: #aeaeae;
+  --green: #0bde46;
+  --blue: #0d79dd;
+  --blue-dark: #052054;
+  --blue-light: #09abdd;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-header: "Work Sans", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--grey-dark);
+  border-radius: 20px;
+  padding: 30px 40px;
+  margin-top: 60px;
+  box-shadow: 2px 2px 4px rgb(0 0 0 /0.5);
+  h1 {
+    font-family: var(--font-family-header);
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--blue);
+    margin-bottom: 30px;
+  }
+  .email-field,
+  .password-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 28px;
+    .field-icon {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      font-size: 2rem;
+    }
+    label {
+      font-family: var(--font-family-header);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: 3px;
+    }
+    .form-field {
+      width: 330px;
+      height: 45px;
+      border-radius: 8px;
+      border: 2px solid var(--grey-dark);
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: var(--font-family-body);
+    }
+  }
+  .password-field {
+    a {
+      text-decoration: none;
+      color: var(--blue-light);
+      font-family: var(--font-family-body);
+      font-size: 1rem;
+      text-align: end;
+      margin-top: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .password-hide:hover {
+      cursor: pointer;
+    }
+  }
+  button {
+    width: 330px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--green);
+    color: #fff;
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+}
+.division {
+  position: relative;
+  margin-top: 35px;
+  p {
+    position: absolute;
+    font-family: var(--font-family-header);
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--grey-dark);
+    top: 32px;
+    right: 165px;
+    padding-inline: 5px;
+    background-color: #fff;
+  }
+  .line {
+    width: 490px;
+    height: 1px;
+    background-color: var(--grey-light);
+    margin-top: 40px;
+  }
+}
+.register-link {
+  margin-top: 50px;
+  button {
+    width: 375px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    background-color: #fff;
+    color: var(--green);
+    font-family: var(--font-family-header);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background-color: var(--green);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    padding: 10px;
+  }
+  .logo {
+    position: static;
+  }
+  .login-form {
+    margin-top: 20px;
+    padding: 1rem 1.5rem;
+    .password-field, .email-field{
+      .form-field{
+        width: 300px;
+      }
+      .field-icon{
+        font-size: 1.5rem;
+        top: 35px;
+        right: 10px;
+      }
+    }
+    button{
+      width: 300px;
+    }
+  }
+  .division{
+    .line{
+      width: 350px;
+    }
+    p{
+      right: 90px;
+    }
+  }
+  .register-link{
+    button{
+      width: 300px;
+    }
+  }
+}

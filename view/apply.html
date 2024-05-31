@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/apply.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/logo.svg" alt="" /></a> 
+      </div>
+      <form action="#" class="application-form">
+        <div class="header">
+            <h1>Apply To Talent Matrix</h1>
+            <p>
+                Elevate your opportunities, expand your network, and thrive in a community of excellence. Join today and redefine your career journey.
+            </p>
+          </div>
+          <div class="form-field">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="off"/>
+            <i class="bx bx-user"></i>
+            <small></small>
+          </div>
+          <div class="form-field">
+            <label for="email">E-Mail Address:</label>
+            <input type="email" id="email" name="email" required  autocomplete="off"/>
+            <i class="bx bx-envelope"></i>
+          </div>
+          <div class="form-field">
+            <label for="email">CID:</label>
+            <input type="text" id="cid" name="cid" maxlength="11" minlength="11" required  autocomplete="off"/>
+            <i class='bx bxs-user-account'></i>
+          </div>
+          <div class="form-field">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required autocomplete="off" maxlength="8" minlength="8"/>
+            <i class="bx bx-phone"></i>
+            <small></small>
+          </div>
+          <div class="form-field password-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required autocomplete="off"/>
+            <i class='bx bx-hide hide_password'></i>
+            <small></small>
+          </div>
+          <div class="form-field password-field">
+            <label for="confirmPasword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+              autocomplete="off"
+            />
+            <i class='bx bx-hide hide_comfirmpassword'></i>
+            <small></small>
+          </div>
+          <div class="form-field portfolio-field">
+            <label for="portfolio-link">Portfolio Link:</label>
+            <input type="url" name="portfolioLink" id="portfolio-link" >
+            <i class='bx bx-link'></i>
+            <p>Paste your portfolio link to let us know more about your skills.</p>
+          </div>
+          <p class="agreement">By submitting this form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> of Talent Matrix</p>
+          <input type="submit" class="submit-btn">
+      </form>
+      <script src="assets/apply.js"></script>
+</body>
+</html>

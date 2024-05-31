@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <!-- font import -->
+
+    <!-- incon import -->
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!-- incon import -->
+    <!-- style files -->
+    <link rel="stylesheet" href="assets/base.css">
+    <link rel="stylesheet" href="assets/applicant_profile.css">
+    <!-- style files -->
+    <title>Applicant Profile</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+        <ul class="navlist">
+          <li class="navitem"><a href="talent.html">Talents</a></li>
+          <li class="navitem">
+            <a href="client.html">Clients</a>
+          </li>
+          <li class="navitem"><a href="project.html">Projects</a></li>
+          <li class="navitem"><a href="application.html" aria-current="page">Applications</a></li>
+          <li class="navitem">
+            <a href="payment_record.html">Payment Record</a>
+          </li>
+        </ul>
+        <button class="admin_profile">
+          <a href="admin_profile.html"
+            ><img src="assets/images/default_profile.svg" alt="admin profile"
+          /></a>
+        </button>
+      </nav>
+    <main class="talent-form">
+        <div class="profile_container">
+          <div class="profile-img">
+            <img
+              id="talent_profile"
+              src="assets/images/default_profile.svg"
+              alt="Talent profile"
+            />
+          </div>
+          <h3 id="username">X'mas</h3>
+          <div class="address">
+            <span class="material-symbols-outlined">location_on</span>
+            <h5><span>Thimphu</span>, <span>Taba</span></h5>
+          </div>
+          <div class="experience">
+            <h6><span id="experience">3-5 years </span> of Experience</h6>
+          </div>
+          <div class="media">
+            <a href=""
+              ><div class="Facebook">
+                <img
+                  src="assets/images/talent_facebook.svg"
+                  alt="talent facebook link"
+                /></div
+            ></a>
+            <a href=""
+              ><div class="twitter">
+                <img
+                  src="assets/images/talent_twitter.svg"
+                  alt="talent twitter link"
+                /></div
+            ></a>
+            <a href=""
+              ><div class="linkdin">
+                <img
+                  src="assets/images/talent_linkedin.svg"
+                  alt="talent linkedin link"
+                /></div
+            ></a>
+          </div>
+          <button class="delete_user_btn">Delete User</button>
+          <!-- confirmation modal start -->
+        <dialog class="confirmation_modal">
+          <div>
+            <p>Are you sure you want to delete the user?</p>
+            <div class="btns">
+              <button class="cancel_btn">Cancel</button>
+              <button class="confirm_btn">Confirm</button>
+            </div>
+          </div>
+        </dialog>
+        <!-- confirmation modal end -->
+        </div>
+        <div class="detail-box">
+          <div class="fullname">
+            <h3>Full Name:</h3>
+            <p id="fullname">Tenzin Choda</p>
+          </div>
+          <hr />
+          <div class="email">
+            <h3>Email:</h3>
+            <p id="email">tenzin@example.com</p>
+          </div>
+          <hr />
+          <div class="expertise">
+            <h3>Expertise</h3>
+            <ul class="skills">
+              <li class="skill">Network Management</li>
+              <li class="skill">Skill2</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+              <li class="skill">Cyber Security</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education-box">
+          <h3>Education:</h3>
+          <p>
+            <span id="school"
+              >Gyelpozhing College of Information and Technology</span
+            >, <span id="field_of_study">Computer Science</span>
+            <span id="date_from">2023</span>-<span>2027</span>(expected).
+          </p>
+          <h3>Employment:</h3>
+          <p>
+            <span id="title">UX/UI Designer</span> | <span>Sellice</span>
+            <span id="from">01/01/2023</span>-<span>01/12/2023</span>
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>About me:</h3>
+          <p id="about">
+            Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+            fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
+            elit sed risus. Maecenas eget condimentum velit, sit amet
+        </p>
+    </div>
+    <div class="review-box">
+        <div class="header">
+            <h3>Review</h3>
+        </div>
+        <p class="no_review">No review to show yet.</p>
+    </div>
+    <div class="workHis-box">
+        <h3>Work History</h3>
+        <p class="no_workhistory">No work history to show yet</p>
+        </div>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <div>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div>
+            <p>Thimphu, Bhutan</p>
+            <a href="mailto: 12230054.gcit@rub.edu.bt"
+              >talentmatrix.bht@gmail.com</a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><img src="assets/images/facebook-icon.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/twitter-icon.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/discord-icon.svg" alt="discord"
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+        </div>
+      </footer>
+      <script src="assets/applicant_profile.js"></script>
+</body>
+</html>

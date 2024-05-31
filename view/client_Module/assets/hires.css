@@ -1,0 +1,186 @@
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img,
+  picture,
+  svg,
+  canvas {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+:root {
+  --grey-dark: #716e6e;
+  --grey-light: #aeaeae;
+  --green: #0bde46;
+  --blue: #0d79dd;
+  --blue-dark: #052054;
+  --blue-light: #09abdd;
+  --font-family-body: "Lato", sans-serif;
+  --font-family-header: "Work Sans", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 700;
+}
+
+main{
+    padding-inline: 4rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 830px) {
+        padding-inline: 2rem;
+    }
+    @media screen and (max-width: 550px) {
+        padding-inline: 1rem;
+        margin-bottom: 1rem;
+    }
+    h1{
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        @media screen and (max-width: 550px) {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .hire_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.no_hires{
+    width: 900px;
+    height: 500px;
+    background-image: linear-gradient(to top, rgb(20 189 243 /0.3), rgb(20 189 243 /0.3)), url(images/no_hires.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    @media screen and (max-width: 830px) {
+        height: 350px;
+    }
+    @media screen and (max-width: 550px) {
+        width: 400px;
+        height: 200px;
+    }
+    @media screen and (max-width: 450px) {
+        width: 350px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 300px;
+    }
+    h2{
+        color: var(--grey-dark);
+        font-size: 3rem;
+        @media screen and (max-width: 830px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+.wrapper{
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px var(--grey-light);
+    width: 400px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    @media screen and (max-width: 830px) {
+        width: 330px;
+        padding: 12px 8px;
+    }
+    .talent_profile{
+        img{
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            @media screen and (max-width: 1250px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .hire_details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            color: #000;
+        }
+        .address{
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.7rem;
+            ion-icon{
+                font-size: 1rem;
+                --ionicon-stroke-width: 48px;
+            }
+            p{
+                font-weight: var(--font-weight-semi-bold);
+            }
+        }
+        .skills{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            p{
+                border: 2px solid var(--blue);
+                padding: 5px 0.8rem;
+                border-radius: 20px;
+                color: var(--blue);
+            }
+        }
+        .project{
+            font-size: 1.3rem;
+            font-weight: var(--font-weight-medium);
+        }
+    }
+}

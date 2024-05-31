@@ -1,0 +1,179 @@
+:root{
+    --grey-dark:#716E6E;
+    --grey-light: #AEAEAE;
+    --green: #0BDE46;
+    --blue:#0D79DD;
+    --blue-dark:#052054;
+    --blue-light: #09abdd;
+    --font-family-body:"Lato", sans-serif;
+    --font-family-header: "Work Sans", sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 700;
+}
+main{
+    padding-inline: 3rem;
+    margin-bottom: 2rem;
+}
+.tabs_container{
+    [role="tablist"]{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        list-style: none;
+        gap: 1rem;
+        [role="tab"]{
+            text-decoration: none;
+            font-family: var(--font-family-header);
+            font-size: 1.3rem;
+            font-weight: var(--font-weight-semi-bold);
+            color: #000;
+            border: 2px solid var(--blue);
+            padding: 0.8rem 1rem;
+            transition: background-color 200ms ease-out;
+            &:hover{
+                background-color: var(--blue);
+                color: #fff;
+            }
+            &[aria-selected="true"]{
+                background-color: var(--blue);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.wrapper_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+}
+.talent_card_wrapper{
+    border: 2px solid var(--grey-dark);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .shortlist{
+        align-self: flex-end;
+        background: none;
+        border: none;
+        svg path{
+            &:hover, &:focus-visible, &:active{
+                fill: var(--blue);
+                cursor: pointer;
+            }
+        }
+    }
+    .profile{
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+    .details{
+        font-family: var(--font-family-body);
+        font-size: 1.3rem;
+        p{
+            margin-bottom: 0.5rem;
+        }
+    }
+    a{
+        align-self: flex-end;
+        text-decoration: none;
+        color: var(--blue-light);
+        font-family: var(--font-family-body);
+        font-size: 1.3rem;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            width: 0;
+            height: 2px;
+            background-color: var(--blue-light);
+            transition: width 200ms ease-in-out;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+    }
+}
+
+#shortlisted{
+    .wrapper_grid{
+        .talent_card_wrapper{
+            .approve{
+                align-self: flex-end;
+                background: none;
+                border: none;
+                svg path{
+                    &:hover, &:focus-visible, &:active{
+                        fill: var(--green);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.confirmation_modal{
+    margin: auto;
+    position: fixed;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    &::backdrop{
+        background-color: rgba(0,0,0,0.5);
+    }
+    @media screen and (max-width: 550px) {
+      margin-inline: 1rem;
+    }
+    &>div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      height: 100%;
+      p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: var(--font-family-body);
+      }
+      .btns{
+        align-self: center;
+        button{
+          padding: 7px 1.5rem;
+          border-radius: 8px;
+          border: none;
+          font-family: var(--font-family-header);
+          font-size: 1.3rem;
+          font-weight: var(--font-weight-semi-bold);
+          &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+          }
+          &:nth-child(1){
+            background-color: red;
+            color: #fff;
+            margin-right: 1rem;
+          }
+          &:nth-child(2){
+            background-color: var(--green);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }

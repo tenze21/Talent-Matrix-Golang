@@ -1,0 +1,90 @@
+@layer reset {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: unset;
+    }
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+    img,
+    picture,
+    svg,
+    canvas {
+      /* display: block; */
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  }
+  :root {
+    --grey-dark: #716e6e;
+    --grey-light: #aeaeae;
+    --green: #0bde46;
+    --blue: #0d79dd;
+    --blue-dark: #052054;
+    --font-family-body: "Lato", sans-serif;
+    --font-family-header: "Work Sans", sans-serif;
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 700;
+  }
+
+  .logo{
+    position: absolute;
+    top: 82px;
+    left: 82px;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  form{
+    margin-top: 200px;
+    fieldset{
+        border: none;
+        display: flex;
+        gap: 20px;
+        max-width: 800px;
+        legend{
+            font-size: 2rem;
+            font-family: var(--font-family-header);
+            font-weight: var(--font-weight-medium);
+            color: var(--blue);
+        }
+        .talent{
+            border: 1px solid black;
+            max-width: 500px;
+            height: 184px;
+        }
+        .client{
+            border: 1px solid black;
+            max-width: 500px;
+            height: 184px;
+        }
+    }
+
+  }

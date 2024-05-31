@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/home.css" />
+  </head>
+  <body>
+    <!-- Hero section start -->
+    <section class="hero" aria-labelledby="header">
+      <h1 id="header" hidden>Hero section</h1>
+      <nav class="navbar">
+        <img src="assets/images/logo-white.svg" alt="Logo" class="logo" />
+        <button class="topnavOpen" id="btnOpen" aria-expanded="false">
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="topnav">
+          <button class="topnavClose" id="btnClose">
+            <i class="bx bx-x"></i>
+          </button>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="client.html">Clients</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <div class="nav-btns">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="selectrole.html" class="register-btn">Register</a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero_content">
+        <div class="hero_text">
+          <h1>Hello There,</h1>
+          <p>
+            Welcome to Talent Matrix, the perfect place for you to discover,
+            connect and collaborate with the best talents in web development,
+            design, photography and more.
+          </p>
+        </div>
+        <div class="search_field">
+          <form action="#" class="search_bar" id="search_input">
+            <i class="bx bx-search"></i>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search Talents"
+              autocomplete="off"
+              spellcheck="false" 
+              autocapitalize="off"
+            />
+          </form>
+          <div class="search_box">
+          </div>
+          <div class="popular">
+            <p>Popular:</p>
+            <ul class="popular_search_list">
+              <li class="list_item"><a href="search.html">Graphics Design</a></li>
+              <li class="list_item"><a href="search.html">Web Design</a></li>
+              <li class="list_item"><a href="search.html">Artificial Intelligence</a></li>
+              <li class="list_item"><a href="search.html">Music & Audio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+    <!-- Plarform stats start -->
+    <article aria-labelledby="platform_stats" class="stats">
+      <header id="platform_stats" hidden>Talent Matrix Stats</header>
+      <section title="Number of talents" class="talents">
+        <h3>500+</h3>
+        <p>Talents</p>
+      </section>
+      <section title="Number of clients" class="clients">
+        <h3>300+</h3>
+        <p>Clients</p>
+      </section>
+      <section title="Number of projects" class="projects">
+        <h3>700+</h3>
+        <p>Projects</p>
+      </section>
+    </article>
+    <!-- platform stats end -->
+    <!-- category section end -->
+    <section aria-labelledby="category_header" class="categories">
+      <div class="container">
+        <h2 id="category_header">Top Categories</h2>
+        <p>Explore our top talent categories</p>
+      </div>
+      <div class="container">
+        <div class="swiper category-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img src="assets/images/category_ai.svg" alt="category" />
+              </div>
+              <div class="category-slide-content">
+                <h2>Artificial Intelligence</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img
+                  src="assets/images/category_development.svg"
+                  alt="Tranding"
+                />
+              </div>
+              <div class="category-slide-content">
+                <h2>Web, Mobile and Software dev</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img src="assets/images/category_fashion.svg" alt="Tranding" />
+              </div>
+              <div class="category-slide-content">
+                <h2>Fashion Design</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img
+                  src="assets/images/category_graphics_design.svg"
+                  alt="Tranding"
+                />
+              </div>
+              <div class="category-slide-content">
+                <h2>Graphics Design</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img src="assets/images/category_music.svg" alt="Tranding" />
+              </div>
+              <div class="category-slide-content">
+                <h2>Music and Audio</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img
+                  src="assets/images/category_photography.svg"
+                  alt="Tranding"
+                />
+              </div>
+              <div class="category-slide-content">
+                <h2>Photography</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img
+                  src="assets/images/category_videography.svg"
+                  alt="Tranding"
+                />
+              </div>
+              <div class="category-slide-content">
+                <h2>Videography</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide category-slide">
+              <div class="category-slide-img">
+                <img
+                  src="assets/images/category_writing_translation.svg"
+                  alt="Tranding"
+                />
+              </div>
+              <div class="category-slide-content">
+                <h2>Writing and Translation</h2>
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="category-slider-control">
+            <button class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category section end -->
+    <!-- testimonial section start -->
+    <section aria-labelledby="testimonial_header" class="testimonials">
+      <h2 id="testimonial_header">What Our Clients Say About Us.</h2>
+      <div class="slider_wrapper testimonial_slider">
+        <button id="prev-slide" class="slide-button">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <ul class="testimonial-list">
+          <li>
+            <div class="testimonial_wrapper">
+              <div class="quotation">
+                <i class="bx bxs-quote-left"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                at nisi excepturi cupiditate, nesciunt cumque labore sapiente
+                fuga enim, distinctio maiores saepe vero voluptatibus quo
+                perspiciatis nobis beatae alias sit?
+              </p>
+              <div class="author">
+                <img src="assets/images/testimonial1.jpeg" alt="" />
+                <h3>Karma Cheki</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial_wrapper">
+              <div class="quotation">
+                <i class="bx bxs-quote-left"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                at nisi excepturi cupiditate, nesciunt cumque labore sapiente
+                fuga enim, distinctio maiores saepe vero voluptatibus quo
+                perspiciatis nobis beatae alias sit?
+              </p>
+              <div class="author">
+                <img src="assets/images/testimonial3.jpeg" alt="" />
+                <h3>Jigme Tshwang</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial_wrapper">
+              <div class="quotation">
+                <i class="bx bxs-quote-left"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                at nisi excepturi cupiditate, nesciunt cumque labore sapiente
+                fuga enim, distinctio maiores saepe vero voluptatibus quo
+                perspiciatis nobis beatae alias sit?
+              </p>
+              <div class="author">
+                <img src="assets/images/testimonial2.jpg" alt="" />
+                <h3>Kinley Dolkar</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial_wrapper">
+              <div class="quotation">
+                <i class="bx bxs-quote-left"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                at nisi excepturi cupiditate, nesciunt cumque labore sapiente
+                fuga enim, distinctio maiores saepe vero voluptatibus quo
+                perspiciatis nobis beatae alias sit?
+              </p>
+              <div class="author">
+                <img src="assets/images/testimonial4.jpeg" alt="" />
+                <h3>Tshering Dorji</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial_wrapper">
+              <div class="quotation">
+                <i class="bx bxs-quote-left"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                at nisi excepturi cupiditate, nesciunt cumque labore sapiente
+                fuga enim, distinctio maiores saepe vero voluptatibus quo
+                perspiciatis nobis beatae alias sit?
+              </p>
+              <div class="author">
+                <img src="assets/images/testimonial5.jpeg" alt="" />
+                <h3>Hemraj Archaria</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button id="next-slide" class="slide-button">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- testimonial section end -->
+    <!-- why us section start -->
+    <section aria-labelledby="why_us_header" class="why_us">
+      <h2 id="why_us_header">Why Talent Matrix?</h2>
+      <div class="cards_wrapper">
+        <div class="card_container">
+          <img src="assets/images/why-talent-matrix-img5.svg" alt="" />
+          <h3>Privacy and Security</h3>
+          <p>
+            Talent Matrix implements robust encryption measures and strict access
+            controls to keep the user data safe and secure.
+          </p>
+        </div>
+        <div class="card_container">
+          <img src="assets/images/why-talent-matrix-img4.svg" alt="" />
+          <h3>Large Variety</h3>
+          <p>
+            Talent Matrix has a wide variety of talented people ready to take on any project.
+          </p>
+        </div>
+        <div class="card_container">
+          <img src="assets/images/why-talent-matrix-img3.svg" alt="" />
+          <h3>Verified Talents</h3>
+          <p>
+            All talents registered on Talent Matrix are verified professionals in their field of work.
+          </p>
+        </div>
+        <div class="card_container">
+          <img src="assets/images/why-talent-matrix-img2.svg" alt="" />
+          <h3>Payment Upon Delivery</h3>
+          <p>
+            Only pay when the desired work is achieved.
+          </p>
+        </div>
+        <div class="card_container">
+          <img src="assets/images/why-talent-matrix-img1.svg" alt="" />
+          <h3>Supportive</h3>
+          <p>
+            Talent Matrix has a conducive enviroment on discord where talents support each other to deliver the best work to the clients.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- why us section end -->
+    <!-- how it works section -->
+    <section aria-labelledby="how_it_works" class="how_it_works">
+      <h2 id="how_it_works">How It Works</h2>
+      <div class="cards_wrapper">
+        <div class="card_container">
+          <img src="assets/images/how-it-works-img2.svg" alt="">
+          <p>Look for talents and hire them for your project.</p>
+        </div>
+        <div class="card_container">
+          <img src="assets/images/how-it-works-img1.svg" alt="">
+          <p>Post a job and select the best talents on your team.</p>
+        </div>
+      </div>
+    </section>
+    <!-- how it works section end -->
+    <!-- trusted by section -->
+    <section aria-labelledby="trusted_by"class="trusted_by">
+      <h2 id="trusted_by">Trusted By</h2>
+      <div class="company_logo_wrapper">
+        <div class="selise">
+          <img src="assets/images/selice-logo.svg" alt="">
+        </div>
+        <div class="govtech">
+          <img src="assets/images/govtech-logo.svg" alt="">
+        </div>
+        <div class="dhi">
+          <img src="assets/images/DHI-logo.svg" alt="">
+        </div>
+        <div class="ibest">
+          <img src="assets/images/ibest-logo.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- trusted by section end -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="category">
+          <h5>Search Talent: Category</h5>
+          <a href="#">Artificial Intelligence</a>
+          <a href="#">Art & Photography</a>
+          <a href="#">Fashion & Model</a>
+          <a href="#">Graphics & Design</a>
+          <a href="#">Music & Audio</a>
+          <a href="#">Programming & Tech</a>
+          <a href="#">Sales & Marketing</a>
+          <a href="#">Video & Animation</a>
+          <a href="#">Web, Mobile & Software dev</a>
+          <a href="#">Writing & Translation</a>
+        </div>
+        <div class="info">
+          <a href="#">About Us</a>
+          <a href="#" id="open-contact-modal">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#" id="open-feedback-modal">Feedback</a>
+        </div>
+        <div class="contact-details">
+          <p>Thimphu, Bhutan</p>
+          <a href="mailto:12230054.gcit@rub.edu.bt"
+            >talentmatrix.bht@gmail.com</a
+          >
+          <div class="social-icons">
+            <a href="#"
+              ><img src="assets/images/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/linkedin-icon.svg" alt="Linked in"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/twitter-icon.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/discord-icon.svg" alt="Discord"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>copyright&copy; Talent Matrix 2024. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Contact us module start -->
+    <dialog class="contact-modal" id="contact-modal">
+      <button class="close-contact-modal">
+        <img src="assets/images/cross.svg" alt="Close the modal" />
+      </button>
+      <form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="679a14c6-fa2d-4fc2-9383-0da747517c66">
+        <h3>Contact Us</h3>
+        <p>
+          We would love to hear from you. Please fill out the form below and we
+          will get back to you as soon as possible.
+        </p>
+        <fieldset>
+          <legend>Role:</legend>
+          <div class="role-field">
+            <div class="client">
+              <input
+                type="radio"
+                id="client"
+                name="role"
+                value="client"
+                spellcheck="false"
+                required
+              />
+              <label for="client">Client</label>
+            </div>
+            <div class="talent">
+              <input type="radio" id="talent" name="role" value="talent" />
+              <label for="talent">Talent</label>
+            </div>
+            <div class="talent">
+              <input type="radio" id="other" name="role" value="other" />
+              <label for="talent">Other</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="message-field">
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" class="submit-btn" />
+      </form>
+    </dialog>
+    <!-- Contact us modal end -->
+
+    <!-- Feedback modal start-->
+    <dialog class="feedback-modal">
+      <button class="close-feedback-modal">
+        <img src="assets/images/cross.svg" alt="Close modal" />
+      </button>
+      <form action="https://api.web3forms.com/submit" method="post">
+        <input type="hidden" name="access_key" value="679a14c6-fa2d-4fc2-9383-0da747517c66">
+        <h3>Feedback</h3>
+        <p>
+          Thank you for taking the time to provide us with your valuable
+          feedback. Your insights are crucial in helping us improve our services
+          to better meet your needs.
+        </p>
+        <textarea name="feedback" id="feedback" cols="30" rows="5" spellcheck="false" required></textarea>
+        <input type="submit" class="submit-btn"/>
+      </form>
+    </dialog>
+    <!-- Feedback modal start-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
