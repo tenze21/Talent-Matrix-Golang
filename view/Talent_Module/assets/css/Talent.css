@@ -86,7 +86,7 @@
     border-top: none;
     border-radius: 0 0 5px 5px;
     overflow-y: auto; /* Make the options scrollable */
-    max-height: 150px; /* Set the maximum height */
+    max-height:300px; /* Set the maximum height */
     width: calc(100% - 2px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     scrollbar-width: none;
@@ -221,7 +221,7 @@
   .content .c_options{
     border-top: solid 0.2px black;
     margin-top: 10px;
-    height: 70px;
+    height: 300px;
     overflow-y: auto;
     padding-right: 7px;
     scrollbar-width: none;
@@ -479,6 +479,8 @@ input{
     }
     h4{
         margin-left: -0.8%;
+        font-size: 1rem;
+        margin-inline: 1.5rem;
         @media screen and (max-width:550px) {
             font-size: 14px;
             margin-left: -3%;
